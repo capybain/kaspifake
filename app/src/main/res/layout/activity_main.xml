@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="@color/gray"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="415dp"
+            android:layout_height="67dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="416dp"
+        android:layout_height="164dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#cfc07a"
+        app:layout_constraintBottom_toTopOf="@+id/perevod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTranslations"
+        tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewTranslations"
+            android:layout_width="126dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:text="Мой банк"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.534"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/perevod"
+            android:layout_width="414dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="164dp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/perevod"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+    <ImageButton
+        android:id="@+id/requisites"
+        android:layout_width="414dp"
+        android:layout_height="69dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/requisites"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perevod" />
+
+    <TextView
+        android:id="@+id/balance"
+        style="@style/balance"
+        android:layout_width="142dp"
+        android:layout_height="74dp"
+        android:textSize="25sp"
+        android:text="0.00"
+        android:color="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
